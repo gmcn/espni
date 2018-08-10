@@ -87,6 +87,26 @@ if ( class_exists( 'WP_CLI_Command' ) ) {
 				WP_CLI::error( __( 'WPI CLI is not supported in Multisite mode. Please use web interface to create a backup.', AI1WM_PLUGIN_NAME ) );
 			}
 
+			if ( ! is_dir( AI1WM_STORAGE_PATH ) ) {
+				if ( ! mkdir( AI1WM_STORAGE_PATH ) ) {
+					WP_CLI::error_multi_line( array(
+						sprintf( __( 'All in One WP Migration is not able to create <strong>%s</strong> folder.', AI1WM_PLUGIN_NAME ), AI1WM_STORAGE_PATH ),
+						__( 'You will need to create this folder and grant it read/write/execute permissions (0777) for the All in One WP Migration plugin to function properly.', AI1WM_PLUGIN_NAME ),
+					) );
+					exit;
+				}
+			}
+
+			if ( ! is_dir( AI1WM_BACKUPS_PATH ) ) {
+				if ( ! mkdir( AI1WM_BACKUPS_PATH ) ) {
+					WP_CLI::error_multi_line( array(
+						sprintf( __( 'All in One WP Migration is not able to create <strong>%s</strong> folder.', AI1WM_PLUGIN_NAME ), AI1WM_BACKUPS_PATH ),
+						__( 'You will need to create this folder and grant it read/write/execute permissions (0777) for the All in One WP Migration plugin to function properly.', AI1WM_PLUGIN_NAME ),
+					) );
+					exit;
+				}
+			}
+
 			$params = array();
 			if ( isset( $assoc_args['list'] ) ) {
 				$backups = new cli\Table;
@@ -200,6 +220,16 @@ if ( class_exists( 'WP_CLI_Command' ) ) {
 				WP_CLI::error( __( 'WPI CLI is not supported in Multisite mode. Please use web interface to restore a backup.', AI1WM_PLUGIN_NAME ) );
 			}
 
+			if ( ! is_dir( AI1WM_STORAGE_PATH ) ) {
+				if ( ! mkdir( AI1WM_STORAGE_PATH ) ) {
+					WP_CLI::error_multi_line( array(
+						sprintf( __( 'All in One WP Migration is not able to create <strong>%s</strong> folder.', AI1WM_PLUGIN_NAME ), AI1WM_STORAGE_PATH ),
+						__( 'You will need to create this folder and grant it read/write/execute permissions (0777) for the All in One WP Migration plugin to function properly.', AI1WM_PLUGIN_NAME ),
+					) );
+					exit;
+				}
+			}
+
 			$params = array();
 			if ( isset( $args[0] ) && is_file( ai1wm_backup_path( array( 'archive' => $args[0] ) ) ) ) {
 				$params = array(
@@ -211,7 +241,7 @@ if ( class_exists( 'WP_CLI_Command' ) ) {
 				WP_CLI::error_multi_line( array(
 					__( 'A valid backup name must be provided in order to proceed with the restore process.', AI1WM_PLUGIN_NAME ),
 					__( 'Example: wp ai1wm restore migration-wp-20170913-095743-931.wpress', AI1WM_PLUGIN_NAME ),
-				));
+				) );
 				exit;
 			}
 

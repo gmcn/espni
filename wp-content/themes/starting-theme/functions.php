@@ -45,6 +45,10 @@ function starting_theme_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'menu-1' => esc_html__( 'Primary', 'starting-theme' ),
+		'footer-1' => esc_html__( 'Footer 1', 'starting-theme' ),
+		'footer-2' => esc_html__( 'Footer 2', 'starting-theme' ),
+		'footer-3' => esc_html__( 'Footer 3', 'starting-theme' ),
+		'footer-4' => esc_html__( 'Footer 4', 'starting-theme' ),
 	) );
 
 	/*

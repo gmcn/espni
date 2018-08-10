@@ -14,13 +14,15 @@
 	</div><!-- #content -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'starting-theme' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'starting-theme' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'starting-theme' ), 'starting-theme', '<a href="https://automattic.com/" rel="designer">Underscores.me</a>' ); ?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+	<?php
+	include(locate_template("inc/footer/contact.php"));
+	include(locate_template("inc/footer/sitemap.php"));
+	include(locate_template("inc/footer/newsletter.php"));
+	include(locate_template("inc/footer/signature.php"));
+	?>
+
+
+
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
