@@ -14,24 +14,13 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-
-			<?php
-			while ( have_posts() ) : the_post();
-
-				get_template_part( 'template-parts/content', 'page' );
-
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
-
-			endwhile; // End of the loop.
-			?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
+<?php
+include(locate_template("inc/page-home/primary-slider.php"));
+include(locate_template("inc/page-home/secondary-slider.php"));
+include(locate_template("inc/page-elements/solutions.php"));//fix overflow
+include(locate_template("inc/page-home/intro.php"));
+include(locate_template("inc/page-home/testimonials.php"));
+?>
 
 <?php
 //get_sidebar();

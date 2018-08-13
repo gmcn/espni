@@ -16,6 +16,19 @@ ul.nav li.menu-item-has-children:hover > ul.dropdown-menu {
   }
 }
 
+header {
+  margin-top: 50px;
+  position: absolute;
+  z-index: 9999;
+  top: 0;
+  width: 100%;
+  .site-branding {
+    position: relative;
+    z-index: 3;
+    padding-left: 7.5px;
+  }
+}
+
 a {
   transition: .5s;
 }
