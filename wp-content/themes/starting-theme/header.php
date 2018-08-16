@@ -35,7 +35,12 @@
 
 					<?php $description = get_bloginfo( 'description', 'display' ); ?>
 
-					<img src="<?php echo get_template_directory_uri(); ?>/images/espni-logo.png" alt="<?php bloginfo( 'name' ); ?> | <?php echo $description ?>" />
+					<a href="/">
+
+
+							<img src="<?php echo get_template_directory_uri(); ?>/images/<?php if( is_front_page() ) : ?>espni-logo<?php else : ?>espni-logo-main<?php endif ?>.png" alt="<?php bloginfo( 'name' ); ?> | <?php echo $description ?>" />
+
+					</a>
 
 				</div><!-- /.col-md-2 -->
 

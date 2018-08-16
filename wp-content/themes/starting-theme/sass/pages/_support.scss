@@ -1,0 +1,42 @@
+.fast-support {
+  background: url(images/fast-support-bg.jpg) right bottom #526C88 no-repeat;
+  color: #fff;
+  padding: 80px 0;
+  h4 {
+    font-size: 25px;
+    font-weight: $font__bold;
+  }
+  p {
+    font-size: 18px;
+    font-weight: $font__bold;
+    color: rgba(255,255,255,.4);
+    margin-bottom: 25px;
+  }
+  .button {
+    color: #fff;
+    text-transform: uppercase;
+    background: #F27724;
+    border: none;
+    margin-top: 22px;
+    padding: 12px 25px;
+    font-size: 12px;
+  }
+}
+
+.os {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 15px;
+  a {
+    font-weight: $font__bold;
+    color: #525C65;
+  }
+  a:hover {
+    color: #f27724;
+    text-decoration: none;
+  }
+  img {
+    width: 60%;
+    margin-bottom: 25px;
+  }
+}

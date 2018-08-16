@@ -16,9 +16,9 @@
 
 		<li style="background: url(<?php echo $image ?>); background-size: cover; height: calc(100vh);">
 
-      <div class="vert-align">
+      <div class="vert-align wow fadeIn">
 
-        <h1><?php echo $slider_title ?><h1>
+        <h1 class=""><?php echo $slider_title ?><h1>
           <?php if ($slider_link) : ?>
             <p><a href="<?php echo $slider_link ?>">Click here</a> to find out more</p>
           <?php endif; ?>

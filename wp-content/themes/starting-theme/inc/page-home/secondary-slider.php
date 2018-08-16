@@ -14,7 +14,7 @@
 
   		<li>
 
-        <img src="<?php echo $icon ?>" />
+        <img class="wow fadeIn" src="<?php echo $icon ?>" />
 
         <?php echo $copy; ?>
 
