@@ -5,7 +5,7 @@ $column2 = get_field('column_2');
 
  ?>
 
-<div class="intro">
+<div class="home-intro">
 <div class="container">
   <div class="row">
     <div class="col-md-6 wow fadeInLeftBig">

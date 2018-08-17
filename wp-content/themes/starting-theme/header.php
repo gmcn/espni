@@ -44,7 +44,7 @@
 
 				</div><!-- /.col-md-2 -->
 
-				<div class="col-md-10">
+				<div class="col-md-8">
 					<!-- Static navbar -->
 					<nav class="navbar navbar-default">
 						<div class="container-fluid">
@@ -64,12 +64,31 @@
 									'menu_class' => 'navbar-collapse',
 									'items_wrap' => '<ul id="" class="nav navbar-nav navbar-right">%3$s</ul>' ) );
 									?>
-								<ul class="nav navbar-nav navbar-right">
-									<li class="quote"><a href="./">Get a quote</a></li>
-								</ul>
 						</div><!--/.container-fluid -->
 					</nav><!-- #site-navigation -->
-				</div><!-- /.col-md-10 -->
+				</div><!-- /.col-md-8 -->
+				<div class="col-md-2 right-nav">
+					<ul class="nav navbar-nav social">
+						<li class="hidden-xs hidden-sm">
+							<a href="#">
+								<?php if( is_front_page() ) : ?>
+									<img src="<?php echo get_template_directory_uri(); ?>/images/facebook.svg" />
+								<?php else : ?>
+									<img src="<?php echo get_template_directory_uri(); ?>/images/facebook-black.svg" />
+								<?php endif; ?>
+								</a></li>
+						<li class="hidden-xs hidden-sm">
+							<a href="#">
+							<?php if( is_front_page() ) : ?>
+								<img src="<?php echo get_template_directory_uri(); ?>/images/twitter.svg" />
+							<?php else : ?>
+								<img src="<?php echo get_template_directory_uri(); ?>/images/twitter-black.svg" />
+							<?php endif; ?>
+							</a>
+						</li>
+						<li class="quote"><a href="/contact">Get a quote <img src="<?php echo get_template_directory_uri(); ?>/images/quote-icon.svg" /></a></li>
+					</ul>
+				</div>
 			</div><!-- /.row -->
 
 		</div><!-- /.container-fluid -->

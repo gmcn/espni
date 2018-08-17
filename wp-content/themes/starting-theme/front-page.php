@@ -17,7 +17,7 @@ get_header(); ?>
 <?php
 include(locate_template("inc/page-home/primary-slider.php"));
 include(locate_template("inc/page-home/secondary-slider.php"));
-include(locate_template("inc/page-elements/solutions.php"));//fix overflow
+include(locate_template("inc/page-elements/solutions.php"));
 include(locate_template("inc/page-home/intro.php"));
 include(locate_template("inc/page-home/testimonials.php"));
 ?>

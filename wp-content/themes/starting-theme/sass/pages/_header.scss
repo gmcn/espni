@@ -56,7 +56,6 @@ header {
     padding-left: 7.5px;
   }
   .menu-item-has-children:hover {
-
     ::after {
       @include lg {
         content: " ";
@@ -68,6 +67,32 @@ header {
         z-index: -1;
         background: rgba(0,0,0,0.5);
         }
+    }
+  }
+  .right-nav {
+    padding-right: 0;
+  }
+  ul.social {
+    width: 100%;
+    img {
+      height: 25px;
+    }
+  }
+  li.quote {
+    float: right;
+    width: 60%;
+    text-align: center;
+    background: #f06b21;
+    text-transform: uppercase;
+    img {
+      height: 20px;
+      margin-left: 10px;
+    }
+    a {
+      color: #fff;
+    }
+    a:hover {
+      color: #f06b21;
     }
   }
 }

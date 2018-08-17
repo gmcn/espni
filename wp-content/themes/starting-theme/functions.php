@@ -167,6 +167,12 @@ function new_submenu_class($menu) {
 
 add_filter('wp_nav_menu','new_submenu_class');
 
+function cc_mime_types($mimes) {
+  $mimes['svg'] = 'image/svg+xml';
+  return $mimes;
+}
+add_filter('upload_mimes', 'cc_mime_types');
+
 /**
  * Code to add the custom login css file to the theme
  * - file is "/login/custom-login-styles.css"

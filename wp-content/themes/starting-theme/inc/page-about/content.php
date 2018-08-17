@@ -8,6 +8,8 @@ $separator_copy_2 = get_field('separator_copy_2');
 $column1 = get_field('column_1');
 $column2 = get_field('column_2');
 
+$thumb_url = get_the_post_thumbnail_url();
+
  ?>
 
 <div class="container-fluid about-content">

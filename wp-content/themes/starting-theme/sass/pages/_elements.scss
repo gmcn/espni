@@ -18,3 +18,63 @@
   -o-border-image: url(images/border.png) 26 26 27 27 repeat;
   border-image: url(images/border.png) 26 26 27 27 fill repeat;
 }
+
+.news {
+  .wrapper {
+    position: absolute;
+    background-color: rgba(0,0,0,.5);
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    transition: .5s;
+  }
+  .wrapper:hover {
+    background-color: #f06b21;
+  }
+  color: #fff;
+  padding: 15px 15px 0 15px;
+  position: relative;
+  .news-item {
+    min-height: 360px;
+    .vert-align {
+        position: absolute;
+        top: 50%;
+        z-index: 3;
+        width: calc(100% - 30px);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+  }
+  h2 {
+    @include lg {
+      width: 75%;
+    }
+    font-size: 25px;
+  }
+  .date {
+    font-size: 25px;
+    color: rgba(255,255,255,.5);
+    font-weight: $font__bold;
+  }
+  a {
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    color: #5A5857;
+    background: #fff;
+    border-radius: 5px 5px 0 0;
+    padding: 10px 10px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: $font__bold;
+  }
+  a:hover {
+    color: #fff;
+    background: #000;
+    text-decoration: none;
+  }
+}
