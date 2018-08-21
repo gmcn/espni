@@ -40,11 +40,11 @@
       <form method="POST" action="https://www.fastsupport.com/servlet/download/customerDownload" name="ssid">
         <div class="col-md-4">
           <label>Your name:</label><br  />
-          <input class="form-control" type="TEXT" name="name" size="20" required>
+          <input class="form-control" type="text" name="name" required>
         </div>
         <div class="col-md-4">
           <label>Type the 9 digit number:</label><br  />
-          <input class="form-control" type="TEXT" name="supportSessionId" size="20" required>
+          <input class="form-control" type="text" name="supportSessionId" maxlength="9" equired>
         </div>
         <div class="col-md-2">
           <input class="button" type="SUBMIT" value="Connect">
