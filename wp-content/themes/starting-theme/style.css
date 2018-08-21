@@ -964,8 +964,10 @@ footer .signature {
 .secondaryslider img {
   margin-bottom: -20px;
   z-index: 2;
-  position: relative; }
-/* line 62, sass/pages/_home.scss */
+  position: relative;
+  background: #fff;
+  padding: 0 10px; }
+/* line 64, sass/pages/_home.scss */
 .secondaryslider p {
   border-top: 1px solid #44403C;
   border-bottom: 1px solid #44403C;
@@ -975,14 +977,14 @@ footer .signature {
   font-weight: 700;
   color: #44403C; }
   @media screen and (min-width: 992px) {
-    /* line 62, sass/pages/_home.scss */
+    /* line 64, sass/pages/_home.scss */
     .secondaryslider p {
       font-size: 58px;
       line-height: 58px; } }
-/* line 75, sass/pages/_home.scss */
+/* line 77, sass/pages/_home.scss */
 .secondaryslider span {
   color: #9F9F9F; }
-/* line 78, sass/pages/_home.scss */
+/* line 80, sass/pages/_home.scss */
 .secondaryslider .vert-align {
   position: absolute;
   top: 50%;
@@ -993,16 +995,16 @@ footer .signature {
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(-50%); }
-/* line 89, sass/pages/_home.scss */
+/* line 91, sass/pages/_home.scss */
 .secondaryslider a {
   color: #44403C;
   font-weight: 700; }
-/* line 93, sass/pages/_home.scss */
+/* line 95, sass/pages/_home.scss */
 .secondaryslider a:hover {
   color: #9F9F9F;
   text-decoration: none; }
 
-/* line 99, sass/pages/_home.scss */
+/* line 101, sass/pages/_home.scss */
 .solutions {
   border-top: 10px solid #1D2B36;
   text-align: center;
@@ -1010,76 +1012,76 @@ footer .signature {
   background-size: cover;
   color: #fff;
   padding: 80px 0 40px 0; }
-  /* line 106, sass/pages/_home.scss */
+  /* line 108, sass/pages/_home.scss */
   .solutions h4 {
     font-size: 21px;
     font-weight: 700; }
-  /* line 110, sass/pages/_home.scss */
+  /* line 112, sass/pages/_home.scss */
   .solutions .col-md-6 {
     margin-bottom: 50px;
     border-right: 1px solid #fff; }
     @media screen and (min-width: 992px) {
-      /* line 110, sass/pages/_home.scss */
+      /* line 112, sass/pages/_home.scss */
       .solutions .col-md-6 {
         margin-bottom: 0; } }
-  /* line 117, sass/pages/_home.scss */
+  /* line 119, sass/pages/_home.scss */
   .solutions img {
     max-height: 70px;
     margin-bottom: 50px; }
-  /* line 121, sass/pages/_home.scss */
+  /* line 123, sass/pages/_home.scss */
   .solutions a {
     margin: 110px 0 0 0;
     display: block;
     font-size: 15px;
     font-weight: 700;
     color: rgba(255, 255, 255, 0.3); }
-  /* line 128, sass/pages/_home.scss */
+  /* line 130, sass/pages/_home.scss */
   .solutions a:hover {
     color: rgba(255, 255, 255, 0.5);
     text-decoration: none; }
 
-/* line 134, sass/pages/_home.scss */
+/* line 136, sass/pages/_home.scss */
 .home-intro {
   background: #1E3E4E;
   color: #fff;
   padding: 50px 0 0 0; }
-  /* line 138, sass/pages/_home.scss */
+  /* line 140, sass/pages/_home.scss */
   .home-intro ul, .home-intro li {
     padding: 0;
     margin: 0 0 5px 10px; }
-  /* line 142, sass/pages/_home.scss */
+  /* line 144, sass/pages/_home.scss */
   .home-intro h3 {
     font-style: 25px;
     font-weight: 700; }
-  /* line 146, sass/pages/_home.scss */
+  /* line 148, sass/pages/_home.scss */
   .home-intro p {
     font-size: 17px;
     font-weight: 400; }
-  /* line 150, sass/pages/_home.scss */
+  /* line 152, sass/pages/_home.scss */
   .home-intro p:first-of-type {
     font-size: 22px;
     font-weight: 700; }
 
-/* line 156, sass/pages/_home.scss */
+/* line 158, sass/pages/_home.scss */
 .testimonials__home {
   margin-top: 50px;
   color: rgba(255, 255, 255, 0.5); }
-  /* line 159, sass/pages/_home.scss */
+  /* line 161, sass/pages/_home.scss */
   .testimonials__home a {
     font-weight: 700;
     color: rgba(255, 255, 255, 0.5); }
-  /* line 163, sass/pages/_home.scss */
+  /* line 165, sass/pages/_home.scss */
   .testimonials__home .testimonial__home {
     margin-top: 75px;
     color: #fff; }
-    /* line 165, sass/pages/_home.scss */
+    /* line 167, sass/pages/_home.scss */
     .testimonials__home .testimonial__home .wrapper {
       background: #4DA6BE;
       text-align: center;
       padding: 20px;
       height: 100%;
       position: relative; }
-      /* line 171, sass/pages/_home.scss */
+      /* line 173, sass/pages/_home.scss */
       .testimonials__home .testimonial__home .wrapper .initials {
         background: #fff;
         margin-top: -50px !important;
@@ -1092,19 +1094,19 @@ footer .signature {
         width: 70px;
         border-radius: 50%;
         left: 35%; }
-      /* line 184, sass/pages/_home.scss */
+      /* line 186, sass/pages/_home.scss */
       .testimonials__home .testimonial__home .wrapper .rating {
         margin: 10px 0 15px 0;
         font-size: 22px; }
-      /* line 188, sass/pages/_home.scss */
+      /* line 190, sass/pages/_home.scss */
       .testimonials__home .testimonial__home .wrapper .byline {
         font-weight: 400;
         font-size: 14px;
         margin-bottom: 25px; }
-      /* line 193, sass/pages/_home.scss */
+      /* line 195, sass/pages/_home.scss */
       .testimonials__home .testimonial__home .wrapper p {
         margin-bottom: 25px; }
-      /* line 196, sass/pages/_home.scss */
+      /* line 198, sass/pages/_home.scss */
       .testimonials__home .testimonial__home .wrapper a {
         position: absolute;
         bottom: 10px;
@@ -1112,7 +1114,7 @@ footer .signature {
         left: 0;
         display: block;
         padding-top: 50px; }
-      /* line 204, sass/pages/_home.scss */
+      /* line 206, sass/pages/_home.scss */
       .testimonials__home .testimonial__home .wrapper a:hover {
         color: #fff;
         text-decoration: none; }
