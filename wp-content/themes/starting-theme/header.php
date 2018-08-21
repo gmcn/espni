@@ -89,7 +89,20 @@
 						<li class="quote"><a href="/contact">Get a quote <img src="<?php echo get_template_directory_uri(); ?>/images/quote-icon.svg" /></a></li>
 					</ul>
 				</div>
+
 			</div><!-- /.row -->
+
+			<?php if( !is_front_page() ) : ?>
+
+				<?php
+				if ( function_exists('yoast_breadcrumb') ) {
+					yoast_breadcrumb( '
+				<p class="breadcrumbs">','</p>
+				' );
+				}
+				?>
+
+			<?php endif ?>
 
 		</div><!-- /.container-fluid -->
 

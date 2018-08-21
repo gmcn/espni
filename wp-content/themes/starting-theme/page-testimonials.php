@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Solutions Page
+ * Template Name: Testimonials Page
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
@@ -15,7 +15,7 @@
 get_header(); ?>
 
 <?php
-include(locate_template("inc/page-solutions/child.php"));
+include(locate_template("inc/page-testimonials/content.php"));
 ?>
 
 <?php

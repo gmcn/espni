@@ -1,4 +1,4 @@
-  <div class="container testimonials">
+  <div class="container testimonials__home">
 
     <div class="row">
 
@@ -28,7 +28,7 @@
 
         ?>
 
-        <div class="col-md-3 testimonial wow fadeInDown">
+        <div class="col-md-3 testimonial__home wow fadeInDown">
           <div class="wrapper">
             <p class="initials">
               <?php echo $company_rep_initials ?>

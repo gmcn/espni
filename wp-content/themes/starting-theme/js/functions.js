@@ -29,9 +29,19 @@
   function startMatchHeight() {
     $('.matchheight').matchHeight();
     $('.solutionheight').matchHeight();
-    $('.testimonial').matchHeight();
+    $('.testimonial__wrapper').matchHeight();
     $('.testimonialheight').matchHeight();
   }
   window.onload = startMatchHeight;
+
+$(function() {
+  $('.menu-item-has-children').hover(function() {
+    $('a').css('color', '#fff');
+    $('.dropdown-menu a').css('color', '#f06b21');
+  }, function() {
+    // on mouseout, reset the background colour
+    $('a').css('color', '');
+  });
+});
 
 } ) (jQuery);

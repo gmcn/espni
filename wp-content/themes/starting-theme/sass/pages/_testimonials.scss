@@ -1,0 +1,149 @@
+.testimonial {
+  margin-bottom: 15px;
+  overflow: hidden;
+  &__wrapper {
+    padding: 0 20px 0 20px;
+    a {
+    position: relative;
+    bottom: 0;
+    color: #fff;
+    background: rgba(0,0,0,.30);
+    border-radius: 5px 5px 0 0;
+    padding: 10px 10px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 20px;
+    }
+    a:hover {
+    color: #000;
+    background: #f06b21;
+    text-decoration: none;
+    }
+  }
+  h3 {
+    font-size: 40px;
+    font-weight: $font__bold;
+    color: #fff;
+  }
+  h4 {
+    font-size: 25px;
+    font-weight: $font__reg;
+    color: rgba(255,255,255,.5);
+  }
+  h5 {
+    font-size: 25px;
+    font-weight: $font__bold;
+    color: rgba(255,255,255,.5);
+  }
+}
+
+.grey {
+  background: #848383;
+  text-align: center;
+  margin-bottom: 35px;
+  -webkit-box-shadow: -5px 10px 15px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: -5px 10px 15px 0px rgba(0,0,0,0.5);
+  box-shadow: -5px 10px 15px 0px rgba(0,0,0,0.5);
+  :before {
+    height: 35px;
+    width: 48px;
+    background: url(images/grey-after.png) no-repeat;
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+  }
+  .copy {
+    text-align: left;
+  }
+  .brand {
+    @include md {
+      border-right: 1px solid #fff;
+    }
+    padding: 20px;
+  }
+  img {
+    height: 150px;
+  }
+}
+.darkgrey {
+  background: #4A4A4A;
+  text-align: center;
+  margin-bottom: 35px;
+  -webkit-box-shadow: 5px 10px 15px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 5px 10px 15px 0px rgba(0,0,0,0.5);
+  box-shadow: 5px 10px 15px 0px rgba(0,0,0,0.5);
+  :before {
+    height: 35px;
+    width: 48px;
+    background: url(images/darkgrey-after.png) no-repeat;
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+  }
+  .copy {
+    text-align: right;
+  }
+  .brand {
+    @include md {
+      border-left: 1px solid #fff;
+    }
+    padding: 20px;
+  }
+  img {
+    height: 150px;
+  }
+}
+
+.testimonial-main {
+  background: #848383;
+  .copy {
+    @include md {
+      border-left: 1px solid #fff;
+    }
+    p:first-of-type {
+      font-size: 30px;
+      font-weight: $font__bold;
+      margin-bottom: 40px;
+    }
+    p:last-of-type {
+      margin-bottom: 40px;
+    }
+    .testimonial__header {
+      font-size: 25px;
+      font-weight: $font__bold;
+      background: #4A4A4A;
+      width: 250px;
+      color: #fff;
+      padding: 20px;
+      border-radius: 0 0 5px 5px;
+      margin-bottom: 50px;
+      span {
+        font-size: 50px;
+        display: block;
+      }
+    }
+    strong {
+      font-size: 20px;
+    }
+    a {
+    position: relative;
+    bottom: 0;
+    color: #fff;
+    background: rgba(0,0,0,.30);
+    border-radius: 5px 5px 0 0;
+    padding: 10px 10px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 20px;
+    }
+    a:hover {
+    color: #000;
+    background: #f06b21;
+    text-decoration: none;
+    }
+  }
+}
