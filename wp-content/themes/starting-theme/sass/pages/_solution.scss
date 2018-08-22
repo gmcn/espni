@@ -2,6 +2,7 @@
   .intro {
   font-size: 22px;
   font-weight: $font__bold;
+  margin-bottom: 50px;
     p {
       font-size: 22px;
       font-weight: $font__bold;
@@ -26,13 +27,13 @@
   // padding: 25px 0;
   color: #fff;
   h2 {
-    font-size: 65px;
+    font-size: 30px;
     text-align: center;
     @include sm {
-      font-size: 45px;
+      font-size: 35px;
       text-align: left;
     }
-    @include md {
+    @include lg {
       font-size: 65px;
       text-align: left;
     }

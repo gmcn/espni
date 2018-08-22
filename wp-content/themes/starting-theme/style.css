@@ -715,27 +715,31 @@ ul.nav li.menu-item-has-children:hover > ul.dropdown-menu {
   z-index: 9999999999999999;
   color: #fff; }
 
-/* line 28, sass/pages/_header.scss */
+/* line 32, sass/pages/_header.scss */
 .home .navbar-right {
   background: transparent; }
-/* line 31, sass/pages/_header.scss */
+/* line 35, sass/pages/_header.scss */
 .home header {
-  margin-top: 50px;
+  margin-top: 25px;
   position: absolute;
   z-index: 99999;
   width: 100%;
   border-bottom: none; }
-  /* line 37, sass/pages/_header.scss */
+  @media screen and (min-width: 992px) {
+    /* line 35, sass/pages/_header.scss */
+    .home header {
+      margin-top: 50px; } }
+  /* line 44, sass/pages/_header.scss */
   .home header .navbar-nav > li {
     background: transparent; }
-  /* line 40, sass/pages/_header.scss */
+  /* line 47, sass/pages/_header.scss */
   .home header .site-branding {
     position: relative;
     z-index: 3;
     padding-left: 7.5px;
     z-index: 9999999999999999; }
   @media screen and (min-width: 1200px) {
-    /* line 47, sass/pages/_header.scss */
+    /* line 54, sass/pages/_header.scss */
     .home header .menu-item-has-children:hover ::after {
       content: " ";
       position: fixed;
@@ -747,19 +751,23 @@ ul.nav li.menu-item-has-children:hover > ul.dropdown-menu {
       background: rgba(0, 0, 0, 0.5);
       opacity: .5; } }
 
-/* line 64, sass/pages/_header.scss */
+/* line 71, sass/pages/_header.scss */
 header {
-  margin-top: 50px;
+  margin-top: 25px;
   position: relative;
   z-index: 999999999;
   width: 100%; }
-  /* line 69, sass/pages/_header.scss */
+  @media screen and (min-width: 992px) {
+    /* line 71, sass/pages/_header.scss */
+    header {
+      margin-top: 50px; } }
+  /* line 79, sass/pages/_header.scss */
   header .site-branding {
     position: relative;
     z-index: 3;
     padding-left: 7.5px; }
   @media screen and (min-width: 1200px) {
-    /* line 75, sass/pages/_header.scss */
+    /* line 85, sass/pages/_header.scss */
     header .menu-item-has-children:hover ::after {
       content: " ";
       position: fixed;
@@ -769,28 +777,32 @@ header {
       height: 100%;
       z-index: -1;
       background: rgba(0, 0, 0, 0.5); } }
-  /* line 88, sass/pages/_header.scss */
+  /* line 98, sass/pages/_header.scss */
   header p.breadcrumbs {
-    margin: 25px 0;
+    margin: 10px 0;
     text-align: right;
     color: rgba(41, 27, 60, 0.5); }
-    /* line 92, sass/pages/_header.scss */
+    @media screen and (min-width: 992px) {
+      /* line 98, sass/pages/_header.scss */
+      header p.breadcrumbs {
+        margin: 25px 0; } }
+    /* line 105, sass/pages/_header.scss */
     header p.breadcrumbs a {
       color: rgba(41, 27, 60, 0.5); }
-    /* line 95, sass/pages/_header.scss */
+    /* line 108, sass/pages/_header.scss */
     header p.breadcrumbs a:hover {
       color: #f27724;
       text-decoration: none; }
-  /* line 100, sass/pages/_header.scss */
+  /* line 113, sass/pages/_header.scss */
   header .right-nav {
     padding-right: 0; }
-  /* line 103, sass/pages/_header.scss */
+  /* line 116, sass/pages/_header.scss */
   header ul.social {
     width: 100%; }
-    /* line 105, sass/pages/_header.scss */
+    /* line 118, sass/pages/_header.scss */
     header ul.social img {
       height: 25px; }
-  /* line 109, sass/pages/_header.scss */
+  /* line 122, sass/pages/_header.scss */
   header li.quote {
     float: right;
     width: 60%;
@@ -798,27 +810,27 @@ header {
     background: #f06b21;
     text-transform: uppercase;
     z-index: 9999999999999999; }
-    /* line 116, sass/pages/_header.scss */
+    /* line 129, sass/pages/_header.scss */
     header li.quote img {
       height: 20px;
       margin-left: 10px; }
-    /* line 120, sass/pages/_header.scss */
+    /* line 133, sass/pages/_header.scss */
     header li.quote a {
       color: #fff;
       background-color: #f06b21; }
-    /* line 124, sass/pages/_header.scss */
+    /* line 137, sass/pages/_header.scss */
     header li.quote a:hover {
       color: #f06b21; }
 
-/* line 132, sass/pages/_header.scss */
+/* line 145, sass/pages/_header.scss */
 .home .navbar-nav > li > a {
   color: #fff !important; }
 
-/* line 139, sass/pages/_header.scss */
+/* line 152, sass/pages/_header.scss */
 a {
   transition: .5s; }
 
-/* line 143, sass/pages/_header.scss */
+/* line 156, sass/pages/_header.scss */
 a:hover {
   text-decoration: none; }
 
@@ -923,51 +935,58 @@ footer .signature {
   padding: 100px 0;
   text-align: center; }
 
-/* line 18, sass/pages/_home.scss */
-.primary_slider .bxslider {
-  height: 100vh; }
-  /* line 20, sass/pages/_home.scss */
-  .primary_slider .bxslider h1 {
-    text-align: center;
-    font-size: 65px;
-    color: #fff;
-    font-weight: 700;
-    margin: 0;
-    margin-bottom: 10px; }
-  /* line 28, sass/pages/_home.scss */
-  .primary_slider .bxslider p {
-    color: #fff;
-    font-size: 15px;
-    font-weight: 400; }
-  /* line 33, sass/pages/_home.scss */
-  .primary_slider .bxslider a {
-    font-weight: 700;
-    color: #fff; }
-  /* line 37, sass/pages/_home.scss */
-  .primary_slider .bxslider .vert-align {
-    position: absolute;
-    top: 50%;
-    z-index: 3;
-    width: calc(100% - 30px);
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    transform: translateY(-50%); }
+/* line 17, sass/pages/_home.scss */
+.primary_slider {
+  text-align: center; }
+  /* line 19, sass/pages/_home.scss */
+  .primary_slider .bxslider {
+    height: 100vh; }
+    /* line 21, sass/pages/_home.scss */
+    .primary_slider .bxslider h1 {
+      text-align: center;
+      font-size: 28px;
+      color: #fff;
+      font-weight: 700;
+      margin: 0;
+      margin-bottom: 10px; }
+      @media screen and (min-width: 992px) {
+        /* line 21, sass/pages/_home.scss */
+        .primary_slider .bxslider h1 {
+          font-size: 65px; } }
+    /* line 32, sass/pages/_home.scss */
+    .primary_slider .bxslider p {
+      color: #fff;
+      font-size: 15px;
+      font-weight: 400; }
+    /* line 37, sass/pages/_home.scss */
+    .primary_slider .bxslider a {
+      font-weight: 700;
+      color: #fff; }
+    /* line 41, sass/pages/_home.scss */
+    .primary_slider .bxslider .vert-align {
+      position: absolute;
+      top: 50%;
+      z-index: 3;
+      width: 100%;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%); }
 
-/* line 52, sass/pages/_home.scss */
+/* line 57, sass/pages/_home.scss */
 .secondaryslider ul, .secondaryslider li {
   margin: 0;
   padding: 0;
   position: relative; }
-/* line 57, sass/pages/_home.scss */
+/* line 62, sass/pages/_home.scss */
 .secondaryslider img {
   margin-bottom: -20px;
   z-index: 2;
   position: relative;
   background: #fff;
   padding: 0 10px; }
-/* line 64, sass/pages/_home.scss */
+/* line 69, sass/pages/_home.scss */
 .secondaryslider p {
   border-top: 1px solid #44403C;
   border-bottom: 1px solid #44403C;
@@ -977,14 +996,14 @@ footer .signature {
   font-weight: 700;
   color: #44403C; }
   @media screen and (min-width: 992px) {
-    /* line 64, sass/pages/_home.scss */
+    /* line 69, sass/pages/_home.scss */
     .secondaryslider p {
       font-size: 58px;
       line-height: 58px; } }
-/* line 77, sass/pages/_home.scss */
+/* line 82, sass/pages/_home.scss */
 .secondaryslider span {
   color: #9F9F9F; }
-/* line 80, sass/pages/_home.scss */
+/* line 85, sass/pages/_home.scss */
 .secondaryslider .vert-align {
   position: absolute;
   top: 50%;
@@ -995,16 +1014,16 @@ footer .signature {
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(-50%); }
-/* line 91, sass/pages/_home.scss */
+/* line 96, sass/pages/_home.scss */
 .secondaryslider a {
   color: #44403C;
   font-weight: 700; }
-/* line 95, sass/pages/_home.scss */
+/* line 100, sass/pages/_home.scss */
 .secondaryslider a:hover {
   color: #9F9F9F;
   text-decoration: none; }
 
-/* line 101, sass/pages/_home.scss */
+/* line 106, sass/pages/_home.scss */
 .solutions {
   border-top: 10px solid #1D2B36;
   text-align: center;
@@ -1012,76 +1031,76 @@ footer .signature {
   background-size: cover;
   color: #fff;
   padding: 80px 0 40px 0; }
-  /* line 108, sass/pages/_home.scss */
+  /* line 113, sass/pages/_home.scss */
   .solutions h4 {
     font-size: 21px;
     font-weight: 700; }
-  /* line 112, sass/pages/_home.scss */
+  /* line 117, sass/pages/_home.scss */
   .solutions .col-md-6 {
     margin-bottom: 50px;
     border-right: 1px solid #fff; }
     @media screen and (min-width: 992px) {
-      /* line 112, sass/pages/_home.scss */
+      /* line 117, sass/pages/_home.scss */
       .solutions .col-md-6 {
         margin-bottom: 0; } }
-  /* line 119, sass/pages/_home.scss */
+  /* line 124, sass/pages/_home.scss */
   .solutions img {
     max-height: 70px;
     margin-bottom: 50px; }
-  /* line 123, sass/pages/_home.scss */
+  /* line 128, sass/pages/_home.scss */
   .solutions a {
     margin: 110px 0 0 0;
     display: block;
     font-size: 15px;
     font-weight: 700;
     color: rgba(255, 255, 255, 0.3); }
-  /* line 130, sass/pages/_home.scss */
+  /* line 135, sass/pages/_home.scss */
   .solutions a:hover {
     color: rgba(255, 255, 255, 0.5);
     text-decoration: none; }
 
-/* line 136, sass/pages/_home.scss */
+/* line 141, sass/pages/_home.scss */
 .home-intro {
   background: #1E3E4E;
   color: #fff;
   padding: 50px 0 0 0; }
-  /* line 140, sass/pages/_home.scss */
+  /* line 145, sass/pages/_home.scss */
   .home-intro ul, .home-intro li {
     padding: 0;
     margin: 0 0 5px 10px; }
-  /* line 144, sass/pages/_home.scss */
+  /* line 149, sass/pages/_home.scss */
   .home-intro h3 {
     font-style: 25px;
     font-weight: 700; }
-  /* line 148, sass/pages/_home.scss */
+  /* line 153, sass/pages/_home.scss */
   .home-intro p {
     font-size: 17px;
     font-weight: 400; }
-  /* line 152, sass/pages/_home.scss */
+  /* line 157, sass/pages/_home.scss */
   .home-intro p:first-of-type {
     font-size: 22px;
     font-weight: 700; }
 
-/* line 158, sass/pages/_home.scss */
+/* line 163, sass/pages/_home.scss */
 .testimonials__home {
   margin-top: 50px;
   color: rgba(255, 255, 255, 0.5); }
-  /* line 161, sass/pages/_home.scss */
+  /* line 166, sass/pages/_home.scss */
   .testimonials__home a {
     font-weight: 700;
     color: rgba(255, 255, 255, 0.5); }
-  /* line 165, sass/pages/_home.scss */
+  /* line 170, sass/pages/_home.scss */
   .testimonials__home .testimonial__home {
     margin-top: 75px;
     color: #fff; }
-    /* line 167, sass/pages/_home.scss */
+    /* line 172, sass/pages/_home.scss */
     .testimonials__home .testimonial__home .wrapper {
       background: #4DA6BE;
       text-align: center;
       padding: 20px;
       height: 100%;
       position: relative; }
-      /* line 173, sass/pages/_home.scss */
+      /* line 178, sass/pages/_home.scss */
       .testimonials__home .testimonial__home .wrapper .initials {
         background: #fff;
         margin-top: -50px !important;
@@ -1094,19 +1113,19 @@ footer .signature {
         width: 70px;
         border-radius: 50%;
         left: 35%; }
-      /* line 186, sass/pages/_home.scss */
+      /* line 191, sass/pages/_home.scss */
       .testimonials__home .testimonial__home .wrapper .rating {
         margin: 10px 0 15px 0;
         font-size: 22px; }
-      /* line 190, sass/pages/_home.scss */
+      /* line 195, sass/pages/_home.scss */
       .testimonials__home .testimonial__home .wrapper .byline {
         font-weight: 400;
         font-size: 14px;
         margin-bottom: 25px; }
-      /* line 195, sass/pages/_home.scss */
+      /* line 200, sass/pages/_home.scss */
       .testimonials__home .testimonial__home .wrapper p {
         margin-bottom: 25px; }
-      /* line 198, sass/pages/_home.scss */
+      /* line 203, sass/pages/_home.scss */
       .testimonials__home .testimonial__home .wrapper a {
         position: absolute;
         bottom: 10px;
@@ -1114,7 +1133,7 @@ footer .signature {
         left: 0;
         display: block;
         padding-top: 50px; }
-      /* line 206, sass/pages/_home.scss */
+      /* line 211, sass/pages/_home.scss */
       .testimonials__home .testimonial__home .wrapper a:hover {
         color: #fff;
         text-decoration: none; }
@@ -1156,52 +1175,60 @@ footer .signature {
   margin-bottom: 50px; }
   /* line 37, sass/pages/_about.scss */
   .separator1 span {
-    font-size: 75px;
+    font-size: 50px;
     font-weight: 400; }
-  /* line 41, sass/pages/_about.scss */
+    @media screen and (min-width: 992px) {
+      /* line 37, sass/pages/_about.scss */
+      .separator1 span {
+        font-size: 75px; } }
+  /* line 44, sass/pages/_about.scss */
   .separator1 h2 {
-    font-size: 30px;
+    font-size: 18px;
     font-weight: 700; }
-  /* line 45, sass/pages/_about.scss */
+    @media screen and (min-width: 992px) {
+      /* line 44, sass/pages/_about.scss */
+      .separator1 h2 {
+        font-size: 30px; } }
+  /* line 51, sass/pages/_about.scss */
   .separator1 .vert-align {
     position: absolute;
     top: 50%;
-    width: 100%;
+    width: calc(100% - 30px);
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
     transform: translateY(-50%); }
 
-/* line 57, sass/pages/_about.scss */
+/* line 63, sass/pages/_about.scss */
 .team > .row > [class*='col-'], .col-md-3 > .wrapper > .row > [class*='col-'] {
   min-height: 330px;
   padding-right: 7.5px;
   padding-left: 7.5px;
   margin-bottom: 15px; }
   @media screen and (min-width: 1200px) {
-    /* line 57, sass/pages/_about.scss */
+    /* line 63, sass/pages/_about.scss */
     .team > .row > [class*='col-'], .col-md-3 > .wrapper > .row > [class*='col-'] {
       min-height: 450px; } }
 
-/* line 67, sass/pages/_about.scss */
+/* line 73, sass/pages/_about.scss */
 .team {
   text-align: center; }
-  /* line 69, sass/pages/_about.scss */
+  /* line 75, sass/pages/_about.scss */
   .team .top {
     margin-top: 50px; }
-  /* line 72, sass/pages/_about.scss */
+  /* line 78, sass/pages/_about.scss */
   .team .wrapper {
     background: #f27724;
     height: 330px; }
     @media screen and (min-width: 1200px) {
-      /* line 72, sass/pages/_about.scss */
+      /* line 78, sass/pages/_about.scss */
       .team .wrapper {
         min-height: 450px; } }
-    /* line 78, sass/pages/_about.scss */
+    /* line 84, sass/pages/_about.scss */
     .team .wrapper img {
       width: 50%; }
-    /* line 81, sass/pages/_about.scss */
+    /* line 87, sass/pages/_about.scss */
     .team .wrapper .vert-align {
       position: absolute;
       top: 50%;
@@ -1211,11 +1238,25 @@ footer .signature {
       -ms-transform: translateY(-50%);
       -o-transform: translateY(-50%);
       transform: translateY(-50%); }
-    /* line 91, sass/pages/_about.scss */
+    /* line 97, sass/pages/_about.scss */
     .team .wrapper .hover {
-      display: none;
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      color: rgba(225, 225, 225, 0.5);
+      display: block;
+      z-index: 1;
+      text-align: left;
+      padding-left: 25px;
       transition: .5s; }
-    /* line 96, sass/pages/_about.scss */
+      @media screen and (min-width: 992px) {
+        /* line 97, sass/pages/_about.scss */
+        .team .wrapper .hover {
+          display: none; } }
+    /* line 116, sass/pages/_about.scss */
     .team .wrapper:hover .hover {
       position: relative;
       top: 0;
@@ -1228,69 +1269,77 @@ footer .signature {
       z-index: 1;
       text-align: left;
       padding-left: 25px; }
-    /* line 110, sass/pages/_about.scss */
+    /* line 130, sass/pages/_about.scss */
     .team .wrapper h3 {
       text-transform: uppercase;
       font-size: 35px;
       font-weight: 700; }
-    /* line 115, sass/pages/_about.scss */
+    /* line 135, sass/pages/_about.scss */
     .team .wrapper h4 {
       text-transform: uppercase;
       font-size: 25px;
       font-weight: 400; }
-    /* line 120, sass/pages/_about.scss */
+    /* line 140, sass/pages/_about.scss */
     .team .wrapper h5 {
       text-transform: uppercase;
       font-size: 65px;
       font-weight: 700;
       position: relative;
       bottom: 0; }
-  /* line 128, sass/pages/_about.scss */
+  /* line 148, sass/pages/_about.scss */
   .team h2 {
     font-size: 25px;
     color: #525C65;
     font-weight: 700;
     text-align: left; }
 
-/* line 136, sass/pages/_about.scss */
+/* line 156, sass/pages/_about.scss */
 .separator2 {
   height: 330px;
   color: #fff;
   text-align: center;
   position: relative;
   margin-top: 50px; }
-  /* line 142, sass/pages/_about.scss */
+  /* line 162, sass/pages/_about.scss */
   .separator2 span {
-    font-size: 75px;
+    font-size: 50px;
     font-weight: 400; }
-  /* line 146, sass/pages/_about.scss */
+    @media screen and (min-width: 992px) {
+      /* line 162, sass/pages/_about.scss */
+      .separator2 span {
+        font-size: 75px; } }
+  /* line 169, sass/pages/_about.scss */
   .separator2 h2 {
-    font-size: 30px;
+    font-size: 16px;
     font-weight: 700; }
-  /* line 150, sass/pages/_about.scss */
+    @media screen and (min-width: 992px) {
+      /* line 169, sass/pages/_about.scss */
+      .separator2 h2 {
+        font-size: 30px; } }
+  /* line 176, sass/pages/_about.scss */
   .separator2 .vert-align {
     position: absolute;
     top: 50%;
-    width: 100%;
+    width: calc(100% - 30px);
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
     transform: translateY(-50%); }
 
-/* line 162, sass/pages/_about.scss */
+/* line 188, sass/pages/_about.scss */
 .sub-content {
   color: #525C65;
   margin: 50px 0; }
-  /* line 165, sass/pages/_about.scss */
+  /* line 191, sass/pages/_about.scss */
   .sub-content p:first-of-type {
     font-size: 17px;
     font-weight: 700; }
-  /* line 169, sass/pages/_about.scss */
+  /* line 195, sass/pages/_about.scss */
   .sub-content p {
     font-size: 16px;
     font-weight: 400; }
-  /* line 173, sass/pages/_about.scss */
+  /* line 199, sass/pages/_about.scss */
   .sub-content h4 {
     color: #f27724;
     font-size: 25px;
@@ -1343,56 +1392,57 @@ footer .signature {
 /* line 2, sass/pages/_solution.scss */
 .solution .intro {
   font-size: 22px;
-  font-weight: 700; }
-  /* line 5, sass/pages/_solution.scss */
+  font-weight: 700;
+  margin-bottom: 50px; }
+  /* line 6, sass/pages/_solution.scss */
   .solution .intro p {
     font-size: 22px;
     font-weight: 700;
     margin-bottom: 50px; }
-  /* line 10, sass/pages/_solution.scss */
+  /* line 11, sass/pages/_solution.scss */
   .solution .intro a {
     background: #fff;
     color: #f06b21;
     padding: 10px 20px;
     border-radius: 5px;
     border: 1px solid; }
-  /* line 17, sass/pages/_solution.scss */
+  /* line 18, sass/pages/_solution.scss */
   .solution .intro a:hover {
     background: #f06b21;
     color: #fff;
     border: 1px solid #fff; }
 
-/* line 25, sass/pages/_solution.scss */
+/* line 26, sass/pages/_solution.scss */
 .solution {
   color: #fff; }
-  /* line 28, sass/pages/_solution.scss */
+  /* line 29, sass/pages/_solution.scss */
   .solution h2 {
-    font-size: 65px;
+    font-size: 30px;
     text-align: center;
     text-transform: uppercase; }
     @media screen and (min-width: 768px) {
-      /* line 28, sass/pages/_solution.scss */
+      /* line 29, sass/pages/_solution.scss */
       .solution h2 {
-        font-size: 45px;
+        font-size: 35px;
         text-align: left; } }
-    @media screen and (min-width: 992px) {
-      /* line 28, sass/pages/_solution.scss */
+    @media screen and (min-width: 1200px) {
+      /* line 29, sass/pages/_solution.scss */
       .solution h2 {
         font-size: 65px;
         text-align: left; } }
-  /* line 41, sass/pages/_solution.scss */
+  /* line 42, sass/pages/_solution.scss */
   .solution .icon {
     text-align: center; }
-    /* line 43, sass/pages/_solution.scss */
+    /* line 44, sass/pages/_solution.scss */
     .solution .icon img {
       height: 125px;
       margin: 25px 0; }
 
-/* line 50, sass/pages/_solution.scss */
+/* line 51, sass/pages/_solution.scss */
 .child-solutions {
   margin: 15px 0;
   position: relative; }
-  /* line 53, sass/pages/_solution.scss */
+  /* line 54, sass/pages/_solution.scss */
   .child-solutions .copy {
     background-color: #fff;
     height: 100%;
@@ -1400,38 +1450,38 @@ footer .signature {
     padding-top: 15px;
     padding-bottom: 15px;
     font-size: 17px; }
-  /* line 61, sass/pages/_solution.scss */
+  /* line 62, sass/pages/_solution.scss */
   .child-solutions .row {
     margin-bottom: 15px; }
-  /* line 64, sass/pages/_solution.scss */
+  /* line 65, sass/pages/_solution.scss */
   .child-solutions a {
     color: #fff; }
-  /* line 67, sass/pages/_solution.scss */
+  /* line 68, sass/pages/_solution.scss */
   .child-solutions a:hover {
     color: #f06b21;
     text-decoration: none; }
-  /* line 71, sass/pages/_solution.scss */
+  /* line 72, sass/pages/_solution.scss */
   .child-solutions .row:nth-child(1) {
     background: #797f84; }
-  /* line 74, sass/pages/_solution.scss */
+  /* line 75, sass/pages/_solution.scss */
   .child-solutions .row:nth-child(2) {
     background: rgba(121, 127, 132, 0.9); }
-  /* line 77, sass/pages/_solution.scss */
+  /* line 78, sass/pages/_solution.scss */
   .child-solutions .row:nth-child(3) {
     background: rgba(121, 127, 132, 0.8); }
-  /* line 80, sass/pages/_solution.scss */
+  /* line 81, sass/pages/_solution.scss */
   .child-solutions .row:nth-child(4) {
     background: rgba(121, 127, 132, 0.7); }
-  /* line 83, sass/pages/_solution.scss */
+  /* line 84, sass/pages/_solution.scss */
   .child-solutions .row:nth-child(5) {
     background: rgba(121, 127, 132, 0.6); }
-  /* line 86, sass/pages/_solution.scss */
+  /* line 87, sass/pages/_solution.scss */
   .child-solutions .row:nth-child(6) {
     background: rgba(121, 127, 132, 0.55); }
-  /* line 89, sass/pages/_solution.scss */
+  /* line 90, sass/pages/_solution.scss */
   .child-solutions .row:nth-child(7) {
     background: rgba(121, 127, 132, 0.5); }
-  /* line 92, sass/pages/_solution.scss */
+  /* line 93, sass/pages/_solution.scss */
   .child-solutions .row:nth-child(8) {
     background: rgba(121, 127, 132, 0.45); }
 

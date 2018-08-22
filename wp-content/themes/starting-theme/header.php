@@ -31,7 +31,7 @@
 		<div class="container-fluid">
 
 			<div class="row">
-				<div class="col-md-2 site-branding">
+				<div class="col-md-2 col-xs-6 site-branding">
 
 					<?php $description = get_bloginfo( 'description', 'display' ); ?>
 
@@ -69,7 +69,7 @@
 				</div><!-- /.col-md-8 -->
 				<div class="col-md-2 right-nav">
 					<ul class="nav navbar-nav social">
-						<li class="hidden-xs hidden-sm">
+						<li class="hidden-xs hidden-sm hidden-md">
 							<a href="#">
 								<?php if( is_front_page() ) : ?>
 									<img src="<?php echo get_template_directory_uri(); ?>/images/facebook.svg" />
@@ -77,7 +77,7 @@
 									<img src="<?php echo get_template_directory_uri(); ?>/images/facebook-black.svg" />
 								<?php endif; ?>
 								</a></li>
-						<li class="hidden-xs hidden-sm">
+						<li class="hidden-xs hidden-sm hidden-md">
 							<a href="#">
 							<?php if( is_front_page() ) : ?>
 								<img src="<?php echo get_template_directory_uri(); ?>/images/twitter.svg" />
@@ -86,7 +86,7 @@
 							<?php endif; ?>
 							</a>
 						</li>
-						<li class="quote"><a href="/contact">Get a quote <img src="<?php echo get_template_directory_uri(); ?>/images/quote-icon.svg" /></a></li>
+						<li class="quote hidden-xs hidden-sm"><a href="/contact">Get a quote <img src="<?php echo get_template_directory_uri(); ?>/images/quote-icon.svg" /></a></li>
 					</ul>
 				</div>
 

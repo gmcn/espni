@@ -15,11 +15,15 @@
 }
 
 .primary_slider {
+  text-align: center;
   .bxslider {
     height: 100vh;
     h1 {
       text-align: center;
-      font-size: 65px;
+      font-size: 28px;
+      @include md {
+        font-size: 65px;
+      }
       color: #fff;
       font-weight: $font__bold;
       margin: 0;
@@ -38,7 +42,8 @@
         position: absolute;
         top: 50%;
         z-index: 3;
-        width: calc(100% - 30px);
+        // width: calc(100% - 30px);
+        width: 100%;
         -webkit-transform: translateY(-50%);
         -moz-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
