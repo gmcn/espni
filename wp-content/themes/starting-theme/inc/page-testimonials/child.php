@@ -14,7 +14,7 @@ $menu_order = $post->menu_order;
 
    <div class="row testimonial-main">
 
-       <div class="col-md-4">
+       <div class="col-md-4 brand">
          <img src="<?php echo $companyLogo ?>" alt="<?php the_title() ?>" />
        </div>
 

@@ -1,6 +1,6 @@
   <div class="row sitemap">
     <div class="col-md-3">
-      <img src="<?php echo get_template_directory_uri(); ?>/images/espni-logo-footer.jpg" alt="<?php bloginfo( 'name' ); ?>" />
+      <a href="/"><img width="230px" src="<?php echo get_template_directory_uri(); ?>/images/espni-whiteout.svg" alt="<?php bloginfo( 'name' ); ?>" /></a>
     </div>
     <div class="col-md-9">
       <div class="row">

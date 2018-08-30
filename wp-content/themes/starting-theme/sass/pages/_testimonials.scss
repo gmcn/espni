@@ -3,6 +3,9 @@
   overflow: hidden;
   &__wrapper {
     padding: 0 20px 0 20px;
+    .row {
+      height: 100%;
+    }
     a {
     position: relative;
     bottom: 0;
@@ -56,14 +59,13 @@
   }
   .copy {
     text-align: left;
+    height: 100%;
   }
   .brand {
     @include md {
       border-right: 1px solid #fff;
     }
     padding: 20px;
-  }
-  img {
     height: 150px;
   }
 }
@@ -84,20 +86,25 @@
   }
   .copy {
     text-align: right;
+    height: 100%;
   }
   .brand {
     @include md {
       border-left: 1px solid #fff;
     }
     padding: 20px;
-  }
-  img {
-    height: 150px;
+      height: 150px;
   }
 }
 
 .testimonial-main {
   background: #848383;
+  .brand {
+    text-align: center;
+    img {
+      margin-top: 40px;
+    }
+  }
   .copy {
     @include md {
       border-left: 1px solid #fff;
