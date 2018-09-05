@@ -1118,29 +1118,26 @@ footer .signature {
 .about-content {
   border-top: 4px solid #f27724;
   margin-bottom: 50px; }
-  /* line 4, sass/pages/_about.scss */
-  .about-content .container {
-    border-top: 5px solid #f27724; }
-    /* line 6, sass/pages/_about.scss */
-    .about-content .container h1 {
-      color: #f27724;
-      font-size: 25px;
-      font-weight: 700;
-      margin-top: 50px;
-      margin-bottom: 25px; }
-    /* line 13, sass/pages/_about.scss */
-    .about-content .container p:first-of-type {
-      color: #525C65;
-      font-weight: 700;
-      margin-bottom: 25px; }
-    /* line 19, sass/pages/_about.scss */
-    .about-content .container .row p:first-of-type {
-      color: #525C65;
-      font-weight: 400; }
-    /* line 24, sass/pages/_about.scss */
-    .about-content .container p {
-      color: #525C65;
-      font-weight: 400; }
+  /* line 6, sass/pages/_about.scss */
+  .about-content .container h1 {
+    color: #f27724;
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 50px;
+    margin-bottom: 25px; }
+  /* line 13, sass/pages/_about.scss */
+  .about-content .container p:first-of-type {
+    color: #525C65;
+    font-weight: 700;
+    margin-bottom: 25px; }
+  /* line 19, sass/pages/_about.scss */
+  .about-content .container .row p:first-of-type {
+    color: #525C65;
+    font-weight: 400; }
+  /* line 24, sass/pages/_about.scss */
+  .about-content .container p {
+    color: #525C65;
+    font-weight: 400; }
 
 /* line 31, sass/pages/_about.scss */
 .separator1 {
@@ -1626,9 +1623,6 @@ footer .signature {
   background: #f27724;
   color: #fff;
   border-top: 4px solid #fff; }
-  /* line 6, sass/pages/_contact.scss */
-  .contact-content .container {
-    border-top: 5px solid #fff; }
   /* line 9, sass/pages/_contact.scss */
   .contact-content h1 {
     color: #fff;
