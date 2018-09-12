@@ -2,6 +2,9 @@
   overflow: hidden;
 }
 
+::-moz-selection { background: #f27724; color: #fff;}
+::selection { background: #f27724; color: #fff;}
+
 .no-gutter > [class*='col-'] {
     padding-right:0;
     padding-left:0;

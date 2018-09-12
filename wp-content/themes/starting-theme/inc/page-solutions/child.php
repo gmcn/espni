@@ -3,14 +3,31 @@
 
     $currentID = get_the_ID();
 
+    $parentID = wp_get_post_parent_id( $post_ID );
+
+    if ($currentID == 91 || $parentID == 91) :
+
       $args = array(
           'post_type'      => 'page',
           'posts_per_page' => -1,
-          'post_parent'    => 67,
+          'post_parent'    => 91,
           'order'          => 'ASC',
           'orderby'        => 'menu_order',
           'post__not_in'   => array($currentID)
        );
+
+       else :
+
+         $args = array(
+             'post_type'      => 'page',
+             'posts_per_page' => -1,
+             'post_parent'    => 67,
+             'order'          => 'ASC',
+             'orderby'        => 'menu_order',
+             'post__not_in'   => array($currentID)
+          );
+
+        endif;
 
 
       $parent = new WP_Query( $args );
@@ -31,7 +48,9 @@
                 </div>
 
                 <div class="col-sm-3 icon matchheight">
-                  <img src="<?php echo $solutionIcon ?>" alt="<?php the_title() ?>">
+                  <?php if($solutionIcon) : ?>
+                    <img src="<?php echo $solutionIcon ?>" alt="<?php the_title() ?>">
+                  <?php endif; ?>
                 </div>
 
                 <div class="col-sm-4 copy matchheight">
