@@ -115,8 +115,13 @@ header {
   }
   ul.social {
     width: 100%;
+    li {
+      a {
+        padding: 10px 10px;
+      }
+    }
     img {
-      height: 25px;
+      height: 16px;
     }
   }
   li.quote {

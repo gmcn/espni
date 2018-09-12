@@ -775,10 +775,13 @@ header {
   /* line 116, sass/pages/_header.scss */
   header ul.social {
     width: 100%; }
-    /* line 118, sass/pages/_header.scss */
+    /* line 119, sass/pages/_header.scss */
+    header ul.social li a {
+      padding: 10px 10px; }
+    /* line 123, sass/pages/_header.scss */
     header ul.social img {
-      height: 25px; }
-  /* line 122, sass/pages/_header.scss */
+      height: 16px; }
+  /* line 127, sass/pages/_header.scss */
   header li.quote {
     float: right;
     width: 60%;
@@ -786,27 +789,27 @@ header {
     background: #f06b21;
     text-transform: uppercase;
     z-index: 9999999999999999; }
-    /* line 129, sass/pages/_header.scss */
+    /* line 134, sass/pages/_header.scss */
     header li.quote img {
       height: 20px;
       margin-left: 10px; }
-    /* line 133, sass/pages/_header.scss */
+    /* line 138, sass/pages/_header.scss */
     header li.quote a {
       color: #fff;
       background-color: #f06b21; }
-    /* line 137, sass/pages/_header.scss */
+    /* line 142, sass/pages/_header.scss */
     header li.quote a:hover {
       color: #f06b21; }
 
-/* line 145, sass/pages/_header.scss */
+/* line 150, sass/pages/_header.scss */
 .home .navbar-nav > li > a {
   color: #fff !important; }
 
-/* line 152, sass/pages/_header.scss */
+/* line 157, sass/pages/_header.scss */
 a {
   transition: .5s; }
 
-/* line 156, sass/pages/_header.scss */
+/* line 161, sass/pages/_header.scss */
 a:hover {
   text-decoration: none; }
 

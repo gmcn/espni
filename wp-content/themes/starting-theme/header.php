@@ -56,7 +56,7 @@ window.cookieconsent.initialise({
 		<div class="container-fluid">
 
 			<div class="row">
-				<div class="col-md-2 col-xs-6 site-branding">
+				<div class="col-md-2 col-xs-4 site-branding">
 
 					<?php $description = get_bloginfo( 'description', 'display' ); ?>
 
@@ -69,7 +69,7 @@ window.cookieconsent.initialise({
 
 				</div><!-- /.col-md-2 -->
 
-				<div class="col-md-8">
+				<div class="col-xs-8">
 					<!-- Static navbar -->
 					<nav class="navbar navbar-default">
 						<div class="container-fluid">
@@ -93,7 +93,7 @@ window.cookieconsent.initialise({
 					</nav><!-- #site-navigation -->
 				</div><!-- /.col-md-8 -->
 				<div class="col-md-2 right-nav">
-					<ul class="nav navbar-nav social">
+					<ul class="nav navbar-nav social hidden-xs hidden-sm">
 						<li class="hidden-xs hidden-sm hidden-md">
 							<a href="#">
 								<?php if( is_front_page() ) : ?>
